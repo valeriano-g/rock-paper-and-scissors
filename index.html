@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock,paper,sccisors</title>
+</head>
+
+<body>
+    <div>
+        <section id="sec-1" class="begin">
+            <p class="title">
+                welcome!!
+            </p>
+            <form id="form-sec1" action="GET">
+                <div class="form-input">
+                    <input type="text" id="nickname" name="nickname" placeholder="your name" required>
+                </div>
+                <div class="form-input">
+                    <select id="dropdown" name="type" id="gender" aria-placeholder="select">
+                        <option disabled selected>Choose your gender</option>
+                        <option value="man">Men</option>
+                        <option value="women">Women</option>
+                    </select>
+                </div>
+                <div class="form-input">
+                    <p>Choose your color</p>
+                    <input type="radio" id="white-color" name="color" value="white">
+                    <label for="white-color">
+                        <img src="white-hand.png" alt="White Hand">
+                    </label>
+
+                    <input type="radio" id="black-color" name="color" value="black">
+                    <label for="black-color">
+                        <img src="black-hand.png" alt="Black Hand">
+                    </label>
+
+                    <input type="radio" id="indian-color" name="color" value="indian">
+                    <label for="indian-color">
+                        <img src="indian-hand.png" alt="Indian Hand">
+                    </label>
+                </div>
+                <div class="form-input">
+                    <button id="play-btn" type="submit">Play</button>
+                </div>
+
+            </form>
+        </section>
+
+        <section id="sec-2" class="game-sec">
+            <h1> Rock-Paper-Scissors</h1>
+            <div id="game" class="game-container">
+                <div class="game">
+                    <img id="user-color" src="" alt="user">
+                    <p id="user-nick"></p>
+                    <p class="counts" id="user-count">0</p>
+                    <p class="2points">:</p>
+                    <p class="counts" id="cpu-count">0</p>
+                    <img class="cpu-player" src="/img/robot.svg" alt="">
+                </div>
+
+            </div>
+            <div class="choose">
+                <p>choose one type to start</p>
+                <div class="hands-container">
+                    <div class="hand-container">
+                        <button class="btn-hands-type" id="hand-1" type="button">
+                            <img id="hand-type1" class="hand" src="" alt="hand1">
+                        </button>
+                    </div>
+                    <div class="hand-container">
+                        <button class="btn-hands-type" type="button">
+                            <img id="hand-type2" class="hand" src="" alt="hand2">
+                        </button>
+                    </div>
+                    <div class="hand-container">
+                        <button class="btn-hands-type" type="button">
+                            <img id="hand-type3" class="hand" src="" alt="hand-3">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="sec-3" class="result-sec">
+            <p id="result-text" class="title-result">tu ganaste!!!!</p>
+            <button id="btn-revert" type="button">play again?</button>
+
+        </section>
+        <footer class="footer-sec">
+            <p>desarrollado por valeriano</p>
+        </footer>
+    </div>
+</body>
+
+</html>
