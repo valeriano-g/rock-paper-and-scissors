@@ -1,1 +1,17 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.everything-container {
+  background: linear-gradient(-90deg, #52c44A, #E2F8E0);
+}
+
+.game-sec {
+  display: none;
+}
+
+.result-sec {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
