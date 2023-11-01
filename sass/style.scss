@@ -1,9 +1,15 @@
 @import"_sec-1";
+@import"nav-accesibility";
 
 $color-text: #F1FDF0;
 
 body {
-    background: linear-gradient(90deg, #52c44A, #E2F8E0);
+    background: #fdfc47;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdfc47, #24fe41);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #fdfc47, #24fe41);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 * {

@@ -107,8 +107,40 @@
   transform: translate3d(0, 0, -1em);
 }
 
+.nav-game {
+  padding: 10px;
+}
+
+.accessibility-game-ul {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  flex-direction: row;
+}
+
+.accessibility-li {
+  padding: 0px 15px;
+}
+.accessibility-li button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.accessibility-li i {
+  font-size: 20px;
+}
+.accessibility-li i:hover {
+  color: #F1FDF0;
+}
+
 body {
-  background: linear-gradient(90deg, #52c44A, #E2F8E0);
+  background: #fdfc47;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fdfc47, #24fe41);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #fdfc47, #24fe41);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 * {

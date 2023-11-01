@@ -1,0 +1,31 @@
+.nav-game {
+    padding: 10px;
+}
+
+.accessibility-game-ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    flex-direction: row;
+}
+
+.accessibility-li {
+    padding: 0px 15px;
+
+    button {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    i {
+
+        font-size: 20px;
+
+        &:hover {
+            color: #F1FDF0;
+
+        }
+    }
+}
