@@ -14,36 +14,37 @@
             <p class="title">
                 welcome!!
             </p>
-            <form id="form-sec1" action="GET">
+            <form id="form-sec1" action="GET" class="begin-form">
                 <div class="form-input">
-                    <input type="text" id="nickname" name="nickname" placeholder="your name" required>
+                    <input class="input-text" type="text" id="nickname" name="nickname" placeholder="Your Name"
+                        required>
                 </div>
                 <div class="form-input">
-                    <select id="dropdown" name="type" id="gender" aria-placeholder="select">
+                    <select class="input-text" id="dropdown" name="type" id="gender" aria-placeholder="select">
                         <option disabled selected>Choose your gender</option>
                         <option value="man">Men</option>
                         <option value="women">Women</option>
                     </select>
                 </div>
                 <div class="form-input">
-                    <p>Choose your color</p>
-                    <input type="radio" id="white-color" name="color" value="white">
+                    <p class="title-form">Choose your color</p>
+                    <input class="hand-input" type="radio" id="white-color" name="color" value="white">
                     <label for="white-color">
-                        <img src="white-hand.png" alt="White Hand">
+                        <img class="hand-type" src="./img/white-color.svg" alt="White Hand">
                     </label>
 
-                    <input type="radio" id="black-color" name="color" value="black">
+                    <input class="hand-input" type="radio" id="black-color" name="color" value="black">
                     <label for="black-color">
-                        <img src="black-hand.png" alt="Black Hand">
+                        <img class="hand-type" src="./img/black-color.svg" alt="Black Hand">
                     </label>
 
-                    <input type="radio" id="indian-color" name="color" value="indian">
+                    <input class="hand-input" type="radio" id="indian-color" name="color" value="indian">
                     <label for="indian-color">
-                        <img src="indian-hand.png" alt="Indian Hand">
+                        <img class="hand-type" src="./img/indian-color.svg" alt="Indian Hand">
                     </label>
                 </div>
                 <div class="form-input">
-                    <button id="play-btn" type="submit">Play</button>
+                    <button id="play-btn" type="submit" class="play-btn">Play</button>
                 </div>
 
             </form>

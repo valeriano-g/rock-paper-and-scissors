@@ -1,5 +1,10 @@
 @import"_sec-1";
 
+$color-text: #F1FDF0;
+
+body {
+    background: linear-gradient(90deg, #52c44A, #E2F8E0);
+}
 
 * {
     box-sizing: border-box;
@@ -7,8 +12,11 @@
     margin: 0;
 }
 
+
+
 .everything-container {
-    background: linear-gradient(-90deg, #52c44A, #E2F8E0);
+
+    padding: 3em;
 }
 
 .game-sec {
