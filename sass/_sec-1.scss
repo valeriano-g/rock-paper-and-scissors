@@ -1,3 +1,5 @@
+@import"_mixins";
+
 .begin {
     padding: 1em;
 
@@ -33,11 +35,8 @@
             }
 
             .title-form {
-                color: white;
-                font-weight: 500;
-                padding: 10px;
-                text-align: center;
-                font-size: 1.4em;
+                @include choose-title;
+
             }
 
 

@@ -134,6 +134,100 @@
   color: #F1FDF0;
 }
 
+.game-title {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  padding: 1em;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game {
+  display: flex;
+  border: 1px solid white;
+  width: 700px;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.players-container {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.players-container .cpu-player {
+  width: 75px;
+}
+.players-container .user-player {
+  width: 75px;
+}
+.players-container .nicknames {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.players-container .question-marks {
+  width: 75px;
+}
+
+.counts {
+  font-size: 50px;
+  padding: 1em;
+  color: white;
+}
+
+.points {
+  font-size: 50px;
+  color: white;
+}
+
+.choose-title {
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.4em;
+  font-size: 1.8em;
+}
+
+.choose {
+  display: flex;
+  flex-direction: column;
+}
+
+.hand-types {
+  width: 75px;
+}
+.hand-types:hover {
+  transition: 1s;
+  width: 85px;
+  cursor: pointer;
+}
+
+.hand-types-container {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.hand-container {
+  padding: 1em;
+}
+
+.btn-hands-type {
+  background-color: transparent;
+  border: transparent;
+}
+
 body {
   background: #fdfc47;
   /* fallback for old browsers */
@@ -153,7 +247,7 @@ body {
   padding: 3em;
 }
 
-.game-sec {
+.begin {
   display: none;
 }
 

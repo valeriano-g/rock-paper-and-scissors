@@ -1,5 +1,8 @@
 @import"_sec-1";
 @import"nav-accesibility";
+@import"sec-2";
+@import"mixins";
+
 
 $color-text: #F1FDF0;
 
@@ -25,9 +28,11 @@ body {
     padding: 3em;
 }
 
-.game-sec {
+.begin {
     display: none;
 }
+
+.game-sec {}
 
 .result-sec {
     display: none;

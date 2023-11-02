@@ -58,48 +58,56 @@
         </section>
 
         <section id="sec-2" class="game-sec">
-            <h1> Rock-Paper-Scissors</h1>
-            <div id="game" class="game-container">
-                <div class="game">
-                    <img id="user-color" src="" alt="user">
-                    <p id="user-nick"></p>
+            <h1 class="game-title"> Rock-Paper-Scissors</h1>
+            <div class="game-container">
+                <div id="game" class="game">
+                    <div class="players-container">
+                        <img class="user-player" id="user-color" src="./img/user-white.svg" alt="user">
+                        <p class="nicknames" id="user-nick">juanito</p>
+                        <img id="user-mark" class="question-marks" src="./img/question-mark.svg" alt="question-mark">
+                    </div>
                     <p class="counts" id="user-count">0</p>
-                    <p class="2points">:</p>
+                    <p class="points">:</p>
                     <p class="counts" id="cpu-count">0</p>
-                    <img class="cpu-player" src="/img/robot.svg" alt="">
+                    <div class="players-container">
+                        <img class="cpu-player" src="/img/robot.svg" alt="cpu">
+                        <p class="nicknames">Cpu</p>
+                        <img id="cpu-mark" class="question-marks" src="./img/question-mark.svg" alt="question-mark">
+                    </div>
+
                 </div>
+                <div class="choose">
+                    <p class="choose-title">choose one type to start</p>
+                    <ul class="hand-types-container">
 
-            </div>
-            <div class="choose">
-                <p>choose one type to start</p>
-                <div class="hands-container">
-                    <div class="hand-container">
-                        <button class="btn-hands-type" id="hand-1" type="button">
-                            <img id="hand-type1" class="hand" src="" alt="hand1">
-                        </button>
-                    </div>
-                    <div class="hand-container">
-                        <button class="btn-hands-type" type="button">
-                            <img id="hand-type2" class="hand" src="" alt="hand2">
-                        </button>
-                    </div>
-                    <div class="hand-container">
-                        <button class="btn-hands-type" type="button">
-                            <img id="hand-type3" class="hand" src="" alt="hand-3">
-                        </button>
-                    </div>
+                        <li class="hand-container">
+                            <button class="btn-hands-type" id="hand-1" type="button">
+                                <img id="hand-type1" class="hand-types" src="./img/rock-white.svg" alt="hand1">
+                            </button>
+                        </li>
+                        <li class="hand-container">
+                            <button class="btn-hands-type" type="button">
+                                <img id="hand-type2" class="hand-types" src="./img/scissors-white.svg" alt="hand2">
+                            </button>
+                        </li>
+                        <li class="hand-container">
+                            <button class="btn-hands-type" type="button">
+                                <img id="hand-type3" class="hand-types" src="./img/paper-white.svg" alt="hand-3">
+                            </button>
+                        </li>
+                    </ul>
                 </div>
-
             </div>
-        </section>
-        <section id="sec-3" class="result-sec">
-            <p id="result-text" class="title-result">tu ganaste!!!!</p>
-            <button id="btn-revert" type="button">play again?</button>
+    </div>
+    </section>
+    <section id="sec-3" class="result-sec">
+        <p id="result-text" class="title-result">tu ganaste!!!!</p>
+        <button id="btn-revert" type="button">play again?</button>
 
-        </section>
-        <footer class="footer-sec">
-            <p></p>
-        </footer>
+    </section>
+    <footer class="footer-sec">
+        <p></p>
+    </footer>
     </div>
 </body>
 <script src="https://kit.fontawesome.com/42636aa1c3.js" crossorigin="anonymous"></script>
