@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+
     <title>rock,paper,sccisors</title>
 </head>
 
@@ -16,7 +17,9 @@
 
         </ul>
     </nav>
+    <span id="loader" class="loader"></span>
     <div class="everything-container">
+
         <section id="sec-1" class="begin">
             <p class="title">
                 welcome!!
@@ -101,15 +104,35 @@
     </div>
     </section>
     <section id="sec-3" class="result-sec">
-        <p id="result-text" class="title-result">tu ganaste!!!!</p>
-        <button id="btn-revert" type="button">play again?</button>
+        <div class="container-results">
+            <p id="result-title" class="title-result">tu ganaste!!!!</p>
+            <p class="text-result" id="result-text">8 VECES SEGUIDAS</p>
+            <button class="play-btn btn-again" id="btn-revert" type="button">play again?</button>
+        </div>
 
+        <div class="container-circles">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        </div>
     </section>
+
     <footer class="footer-sec">
         <p></p>
     </footer>
     </div>
 </body>
 <script src="https://kit.fontawesome.com/42636aa1c3.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 
 </html>
