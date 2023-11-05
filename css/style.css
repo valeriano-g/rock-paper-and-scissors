@@ -439,6 +439,69 @@ body {
     border-radius: 50%;
   }
 }
+@media only screen and (max-width: 600px) {
+  .begin {
+    padding: 1em;
+  }
+  .begin .title {
+    font-size: 3em;
+    text-align: center;
+    color: #f1fdf0;
+    padding: 10px;
+  }
+  .begin .begin-form .form-input {
+    padding: 1em;
+  }
+  .begin .begin-form .form-input .input-text {
+    width: 320px;
+    height: 35px;
+    border: transparent;
+    border-radius: 10px;
+    outline: transparent;
+    padding: 0px 10px;
+    color: black;
+  }
+  .begin .begin-form .form-input .hand-type {
+    width: 60px;
+    transform: translateX(-10px);
+  }
+  .game-title {
+    font-size: 25px;
+  }
+  .game {
+    width: auto;
+  }
+  .game .players-container {
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .game .players-container .cpu-player {
+    width: 75px;
+  }
+  .game .players-container .user-player {
+    width: 75px;
+  }
+  .game .players-container .nicknames {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .game .players-container .question-marks {
+    width: 75px;
+  }
+  .game .counts {
+    font-size: 40px;
+    padding: 1em;
+    color: white;
+  }
+  .game .points {
+    font-size: 40px;
+    color: white;
+  }
+}
 body {
   background: #fdfc47;
   /* fallback for old browsers */
@@ -459,10 +522,18 @@ body {
   padding: 3em;
 }
 
+.begin {
+  display: block;
+}
+
 .game-sec {
   display: none;
 }
 
 .result-sec {
+  display: none;
+}
+
+.loader {
   display: none;
 }/*# sourceMappingURL=style.css.map */

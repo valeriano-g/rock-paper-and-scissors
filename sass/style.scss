@@ -4,6 +4,7 @@
 @import"mixins";
 @import"_sec-3";
 @import"_animations";
+@import"_responsive";
 
 
 $color-text: #F1FDF0;
@@ -27,16 +28,22 @@ body {
 
 
 .everything-container {
-
     padding: 3em;
 }
 
-.begin {}
+
+.begin {
+    display: block;
+}
 
 .game-sec {
     display: none;
 }
 
 .result-sec {
+    display: none;
+}
+
+.loader {
     display: none;
 }
