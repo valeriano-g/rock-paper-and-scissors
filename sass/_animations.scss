@@ -6,21 +6,23 @@ body {
 
 //loader-animation
 .loader {
+
     transform: rotateZ(45deg);
     perspective: 1000px;
     border-radius: 50%;
-    width: 58px;
-    height: 58px;
-    color: #fff;
+    width: 68px;
+    height: 68px;
+    color: #d10808;
 }
 
 .loader:before,
 .loader:after {
+
     content: '';
-    display: block;
+
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 60%;
+    left: 45%;
     width: inherit;
     height: inherit;
     border-radius: 50%;
@@ -29,7 +31,7 @@ body {
 }
 
 .loader:after {
-    color: #00ff0d;
+    color: #ffe600;
     transform: rotateY(70deg);
     animation-delay: .4s;
 }

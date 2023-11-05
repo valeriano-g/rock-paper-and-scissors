@@ -9,16 +9,18 @@
     <title>rock,paper,sccisors</title>
 </head>
 
-<body>
+<body id="body">
     <nav class="nav-game">
         <ul class="accessibility-game-ul">
-            <li class="accessibility-li"><button type="button"><i class="fa-solid fa-sun"></i></button></li>
-            <li class="accessibility-li"><button type="button"><i class="fa-solid fa-volume-high"></i></li>
+            <li class="accessibility-li"><button id="light-button" type="button"><i
+                        class="fa-solid fa-sun"></i></button></li>
+            <li class="accessibility-li"><button id="sound-button" type="button"><i class="fa-solid fa-volume-high"></i>
+            </li>
 
         </ul>
     </nav>
     <span id="loader" class="loader"></span>
-    <div id="container" class="everything-container">
+    <div id="container" class="everything-container overlay">
 
         <section id="sec-1" class="begin">
             <p class="title">
@@ -101,36 +103,52 @@
                     </ul>
                 </div>
             </div>
-    </div>
-    </section>
-    <section id="sec-3" class="result-sec">
-        <div class="container-results">
-            <p id="result-title" class="title-result">tu ganaste!!!!</p>
-            <p class="text-result" id="result-text">8 VECES SEGUIDAS</p>
-            <button class="play-btn btn-again" id="btn-revert" type="button">play again?</button>
-        </div>
 
-        <div class="container-circles">
-            <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+        </section>
+        <section id="sec-3" class="result-sec">
+            <div class="container-results">
+                <p id="result-title" class="title-result">tu ganaste!!!!</p>
+                <p class="text-result" id="result-text">8 VECES SEGUIDAS</p>
+                <button class="play-btn btn-again" id="btn-revert" type="button">play again?</button>
+            </div>
+
+            <div class="container-circles">
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!--<footer class="footer-sec">
+            <ul>
+               <li>  <p class="footer-text">
+                Obra: Juego Psicodélico <br>
+                Música de https://www.fiftysounds.com/es/
+            </p>
+            <li>
+                <p class="footer-text">
+                    desarrollado por valeriano
+                </p>
+            </li>
+        </li> 
             </ul>
-        </div>
-        </div>
-    </section>
-
-    <footer class="footer-sec">
-        <p></p>
-    </footer>
+          
+        </footer>
+    -->
     </div>
+    </div>
+
+
 </body>
 <script src="https://kit.fontawesome.com/42636aa1c3.js" crossorigin="anonymous"></script>
 <script src="index.js"></script>

@@ -264,18 +264,17 @@ body {
   transform: rotateZ(45deg);
   perspective: 1000px;
   border-radius: 50%;
-  width: 58px;
-  height: 58px;
-  color: #fff;
+  width: 68px;
+  height: 68px;
+  color: #d10808;
 }
 
 .loader:before,
 .loader:after {
   content: "";
-  display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 45%;
   width: inherit;
   height: inherit;
   border-radius: 50%;
@@ -284,7 +283,7 @@ body {
 }
 
 .loader:after {
-  color: #00ff0d;
+  color: #ffe600;
   transform: rotateY(70deg);
   animation-delay: 0.4s;
 }
@@ -462,7 +461,7 @@ body {
     color: black;
   }
   .begin .begin-form .form-input .hand-type {
-    width: 60px;
+    width: 50px;
     transform: translateX(-10px);
   }
   .game-title {
@@ -519,6 +518,7 @@ body {
 }
 
 .everything-container {
+  display: none;
   padding: 3em;
 }
 
@@ -535,5 +535,6 @@ body {
 }
 
 .loader {
-  display: none;
+  display: block;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */
