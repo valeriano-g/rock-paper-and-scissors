@@ -32,31 +32,35 @@
                         required>
                 </div>
                 <div class="form-input">
-                    <select class="input-text" id="dropdown" name="type" id="gender" aria-placeholder="select">
+                    <select class="input-text" id="dropdown" name="type" aria-placeholder="select">
                         <option disabled selected>Choose your gender</option>
-                        <option value="man">Men</option>
+                        <option value="men">Men</option>
                         <option value="women">Women</option>
                     </select>
                 </div>
                 <div class="form-input">
                     <p class="title-form">Choose your color</p>
-                    <input class="hand-input" type="radio" id="white-color" name="color" value="white">
+
                     <label for="white-color">
+                        <input class="hand-input" type="radio" id="hand-colors" name="color" value="white" required>
                         <img class="hand-type" src="./img/white-color.svg" alt="White Hand">
                     </label>
 
-                    <input class="hand-input" type="radio" id="black-color" name="color" value="black">
+
                     <label for="black-color">
+                        <input class="hand-input" type="radio" id="hand-colors" name="color" value="black">
                         <img class="hand-type" src="./img/black-color.svg" alt="Black Hand">
                     </label>
 
-                    <input class="hand-input" type="radio" id="indian-color" name="color" value="indian">
+
                     <label for="indian-color">
+                        <input class="hand-input" type="radio" id="hand-colors" name="color" value="indian">
                         <img class="hand-type" src="./img/indian-color.svg" alt="Indian Hand">
                     </label>
                 </div>
+
                 <div class="form-input">
-                    <button id="play-btn" type="submit" class="play-btn">Play</button>
+                    <button id="play-btn1" type="submit" class="play-btn">Play</button>
                 </div>
 
             </form>
@@ -67,8 +71,8 @@
             <div class="game-container">
                 <div id="game" class="game">
                     <div class="players-container">
-                        <img class="user-player" id="user-color" src="./img/user-white.svg" alt="user">
-                        <p class="nicknames" id="user-nick">juanito</p>
+                        <img class="user-player" id="user-color" src="" alt="user">
+                        <p class="nicknames" id="user-nick"></p>
                         <img id="user-mark" class="question-marks" src="./img/question-mark.svg" alt="question-mark">
                     </div>
                     <p class="counts" id="user-count">0</p>

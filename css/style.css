@@ -522,18 +522,20 @@ body {
   padding: 3em;
 }
 
+/*
+
 .begin {
-  display: block;
+    display: block;
 }
 
 .game-sec {
-  display: none;
+    display: none;
 }
 
 .result-sec {
-  display: none;
+    display: none;
 }
-
+*/
 .loader {
   display: block;
   margin: auto;
