@@ -83,6 +83,7 @@ let type = gender.value
 player.textContent = name
 
 //accedemos al color que el usuario a selecionado
+//iterando dentro de la lista 
 handsColor.forEach(hand_color => {
     if(hand_color.checked){
 
@@ -103,6 +104,7 @@ handsColor.forEach(hand_color => {
                     break;
                 default:
                     // Acción por defecto si SelectColor no coincide con ningún caso
+                    alert("no se ha selecionado color")
                     break;
             }
             break;
@@ -133,8 +135,42 @@ handsColor.forEach(hand_color => {
 else{
 
 }
-   
+   //cambiamos los tipos de manos de piedra papel  o tijeras dependiendo la seleccion del usurio
+const rockAttack = document.querySelector("#rock-attack");
+const sccisorsAttack = document.querySelector("#sccisors-attack");
+const paperAttack = document.querySelector("#paper-attack")
+ 
+if(SelectColor == "white"){
+rockAttack.src ="./img/rock-white.svg";
+sccisorsAttack.src ="./img/scissors-white.svg";
+paperAttack.src ="./img/paper-white.svg";
+
+}
+else if (SelectColor == "indian"){
+rockAttack.src = "./img/indian-rock.svg"
+sccisorsAttack.src ="./img/indian-scissors.svg"
+paperAttack.src="./img/indian-paper.svg"
+
+}
+else if (SelectColor =="black"){
+  rockAttack.src = "./img/black-rock.svg"
+sccisorsAttack.src ="./img/black-scissors.svg"
+paperAttack.src="./img/black-paper.svg"
+}
+
+
 });
+
+
+
+
+
+
+
+
+
+
+
 
   })
 
@@ -142,5 +178,42 @@ else{
 
 }
 
-
 sendData();
+
+const btnsAttack = document.querySelectorAll(".btn-hands-type");
+const UserAttack = document.querySelector("#user-attack");
+const CpuAttack = document.querySelector("#cpu-attack");
+
+function game() {
+  let player = nickname.value
+
+    //se vuelve iterar en las manos del sec-1 para sacar la informacion
+    handsColor.forEach((HandAttackColor) => {
+      if (HandAttackColor.checked) {
+        let HandAttack = HandAttackColor.value;
+
+
+        
+
+      }
+    });
+  // Itera sobre los botones de selección de mano
+  btnsAttack.forEach((btnAttack) => {
+    // se hace el evento escucha para saber cual fue la eleccion del usuario
+    btnAttack.addEventListener("click", () => {
+      let selectHand = btnAttack.getAttribute("value");
+
+      if (selectHand === "rock") {
+        console.log(` el blanco es cojio piedra`);
+
+       
+      } else if (selectHand === "scissors") {
+        console.log(` escojio tijeras`);
+      } else if (selectHand === "paper") {
+        console.log(`escojio papel`);
+      }
+    });
+  });
+}
+
+game();
