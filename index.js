@@ -73,6 +73,7 @@ function sendData() {
     let type = gender.value;
     player.textContent = name;
 
+    
     // Accede al color que el usuario ha seleccionado
     // Itera dentro de la lista de colores de manos
     handsColor.forEach((hand_color) => {
@@ -148,7 +149,27 @@ sendData();
 
 const btnsAttack = document.querySelectorAll(".btn-hands-type");
 const UserAttack = document.querySelector("#user-attack");
-const CpuAttack = document.querySelector("#cpu-attack");
+const CpuAttackD = document.querySelector("#cpu-attack");
+const count_user = document.querySelector("#user-count");
+const count_cpu = document.querySelector("#cpu-count");
+
+//contador de ganadas 
+  let counterUser = 0;
+      let counterCpu = 0; 
+          function incrementCountuser(){
+       
+  console.log("el usuario  gano la batalla")
+counterUser++
+count_user.textContent = counterUser;
+      }
+
+      function incrementCountCpu(){
+counterCpu++
+        console.log("la cpu ha ganado")
+        count_cpu.textContent = counterCpu;
+
+      }
+
 
 function game() {
     btnsAttack.forEach((btnAttack) => {
@@ -192,16 +213,72 @@ function game() {
         }
 
         else if (selectedHandColor === "black" && selectHand ==="paper") {
-          // Mostrar la imagen de la mano negra
+          // Mostrar la imagen de la mano negra papel
           UserAttack.src = "./img/black-paper.svg";
         }
         else if (selectedHandColor === "black" && selectHand ==="scissors") {
-          // Mostrar la imagen de la mano negra
+          // Mostrar la imagen de la mano negra tijeras
           UserAttack.src = "./img/black-scissors.svg";
         }
 
         // Continúa el manejo del juego aquí
         console.log(`El usuario seleccionó: ${selectHand}`);
+
+        function cpu(attacks){
+          //se hace la seleccion aleatoria del ataque de la cpu
+          const SelectHandCpu = Math.floor(Math.random()*cpuAttacks.length)
+          return attacks[SelectHandCpu]
+
+        }
+        const cpuAttacks = ["rock","paper","scissors"]
+        let CpuFinalAttack = cpu(cpuAttacks)
+        //imprimimos el ataque de la cpu ala pantalla
+     console.log( "la cpu ha selecciondo "+ CpuFinalAttack);  
+// se muestra en el Dom la seleccion de la cpu
+
+     if(CpuFinalAttack ==="rock"){
+      CpuAttackD.src ="./img/rock-robot.svg"
+      }
+      
+      else if(CpuFinalAttack === "scissors"){
+      CpuAttackD.src ="./img/Scissors-roboot.svg"
+      }
+      
+      else if(CpuFinalAttack === "paper"){
+        CpuAttackD.src ="./img/paper-robot.svg"
+        }
+      //logica del juego piedra papel o tijeras
+    
+      if (selectHand === "rock" && CpuFinalAttack === "scissors") {
+        incrementCountuser();
+      }
+      else if (selectHand === "scissors" && CpuFinalAttack === "rock"){
+        incrementCountCpu();
+      }
+
+      else if (selectHand ==="paper" && CpuFinalAttack ==="scissors"){
+        incrementCountCpu();
+      }
+       
+      else if (selectHand ==="scissors" && CpuFinalAttack ==="paper"){
+        incrementCountuser();
+      }
+
+      else if (selectHand === "paper" && CpuFinalAttack ==="rock"){
+        incrementCountuser();
+      }
+      else if (selectHand === "rock" && CpuFinalAttack ==="paper"){
+        incrementCountCpu();
+      }
+      else{
+        console.log("empate")
+      }
+
+
+
+    
+
+
       });
     });
   
