@@ -7,6 +7,7 @@ function loadPage() {
     container.style.display = "block";
     loader.style.display = "none";
     console.log("se cargo la pagina");
+    audio.play()
   });
 }
 

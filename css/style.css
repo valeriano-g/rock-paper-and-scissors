@@ -570,6 +570,24 @@ body {
     color: white;
   }
 }
+.footer-sec {
+  padding: 10px;
+  margin: auto;
+}
+
+.footer-ul {
+  list-style: none;
+}
+
+.footer-text {
+  color: black;
+  opacity: 0.8;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
 body {
   background: #fdfc47;
   /* fallback for old browsers */
