@@ -37,7 +37,7 @@ body {
 
 
 
-/*
+
 
 .begin {
     display: block;
@@ -45,12 +45,19 @@ body {
 
 .game-sec {
     display: none;
+
 }
+
 
 .result-sec {
     display: none;
 }
-*/
+
+
+.container-btn-finish {
+    display: none;
+}
+
 .loader {
     display: block;
     margin: auto;

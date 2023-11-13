@@ -1,3 +1,4 @@
+"extric-mode"
 const loader = document.querySelector("#loader");
 const container = document.querySelector("#container");
 
@@ -64,22 +65,29 @@ const btn_play = document.querySelector("#play-btn1");
 const player = document.querySelector("#user-nick");
 const handsColor = document.querySelectorAll("#hand-colors");
 const user_img = document.querySelector("#user-color");
+const sec_1 = document.querySelector("#sec-1");
+const sec_2 = document.querySelector("#sec-2");
 
 function sendData() {
   formGame.addEventListener("submit", function (event) {
     event.preventDefault();
     // Toma los datos del formulario y se los envía a la sec-2 donde está el juego
-    let name = nickname.value;
+    let nameuser = nickname.value;
     let type = gender.value;
-    player.textContent = name;
+  player.textContent = nameuser;
 
-    
+
+/// desaparer la sec-1  y aparecemos la sec-2
+    sec_1.style.display = "none";
+sec_2.style.display = "block";
+
+
     // Accede al color que el usuario ha seleccionado
     // Itera dentro de la lista de colores de manos
     handsColor.forEach((hand_color) => {
       if (hand_color.checked) {
         var SelectColor = hand_color.value;
-        console.log([name, type, SelectColor]);
+        console.log([nameuser, type, SelectColor]);
         // Hace el cambio de color del jugador dependiendo de lo que el usuario haya seleccionado
         switch (type) {
           case "men":
@@ -170,7 +178,7 @@ counterCpu++
 
       }
 
-
+      const btnFinishGame = document.querySelector("#btn-game-finish")
 function game() {
     btnsAttack.forEach((btnAttack) => {
       // Se hace el evento escucha para saber cuál fue la elección del usuario
@@ -273,9 +281,14 @@ function game() {
       else{
         console.log("empate")
       }
+    
 
+      //al pasar un minuto jugando  se aparece el boton de finalizar el juego
+setTimeout(function(){
+   btnFinishGame.style.display ="block";
 
-
+},35000)
+     
     
 
 
@@ -283,8 +296,47 @@ function game() {
     });
   
 }
+const FinalGame = document.querySelector("#sec-3")
+const resultTittle = document.querySelector("#result-title")
+const result = document.querySelector("#result-text")
+
+
+btnFinishGame.addEventListener("click",()=>{
+  function finishGame(){
+    sec_2.style.display = "none";
+FinalGame.style.display ="block";
+
+if(counterUser>counterCpu){
+resultTittle.textContent =`${nickname.value} ha ganado la batalla`
+result.textContent = `${counterUser} veces seguidas!!`
+}
+
+else if(counterUser == counterCpu){
+  resultTittle.textContent =`wuaaao esto estuvo bien fuerte!!!`
+  result.textContent = `ambos combatientes han quedado Empate `
+}
+else if(counterUser<counterCpu){
+  resultTittle.textContent =`Perdiste`
+  result.textContent = `la cpu te ha destronado con la cantidad de ${counterCpu}  veces`
+}
+
+}
+finishGame();
+})
+
 
 game();
+
+
+const btn_revert =document.querySelector("#btn-revert");
+
+btn_revert.addEventListener("click",()=>{
+FinalGame.style.display = "none";
+sec_1.style.display = "block";
+console.log("hize click")
+location.reload();
+    
+})
 
 
 
